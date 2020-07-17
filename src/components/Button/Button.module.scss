@@ -1,0 +1,18 @@
+.button {
+  font: inherit;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: capitalize;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.outlined {
+  border: 1px solid teal;
+  color: teal;
+  background: transparent;
+}
