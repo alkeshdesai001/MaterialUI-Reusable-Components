@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 
+// import cls from '../Shared/Classes';
+
 // import classes from './Button.module.scss';
 
 const ButtonComp = ({ children, variant, disabled, color, onClick }) => {
@@ -25,28 +27,18 @@ const ButtonComp = ({ children, variant, disabled, color, onClick }) => {
 //   className,
 // }) => {
 //   return (
-//     <div>
-//       <Button
-//         variant={variant}
-//         color={color}
-//         onClick={onClick}
-//         disabled={disabled}
-//       >
-//         {children}
-//       </Button>
-//       <button
-//         onClick={onClick}
-//         disabled={disabled}
-//         className={[
-//           classes.button,
-//           classes[variant],
-//           classes[color],
-//           className,
-//         ].join(' ')}
-//       >
-//         {children}
-//       </button>
-//     </div>
+//     <button
+//       onClick={onClick}
+//       disabled={disabled}
+//       className={cls(
+//         classes.button,
+//         classes[variant],
+//         classes[color],
+//         className
+//       )}
+//     >
+//       {children}
+//     </button>
 //   );
 // };
 

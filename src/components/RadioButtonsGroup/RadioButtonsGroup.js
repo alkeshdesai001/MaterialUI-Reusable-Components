@@ -11,6 +11,7 @@ const RadioButtonsGroup = ({
   options,
   label,
   color,
+  size,
 }) => {
   const onChange = (e) => {
     setRadioButtonState(e.target.value);
@@ -23,7 +24,7 @@ const RadioButtonsGroup = ({
           <FormControlLabel
             key={o.value}
             value={o.value}
-            control={<Radio color={color ? color : 'default'} />}
+            control={<Radio color={color ? color : 'default'} size={size} />}
             label={o.label}
           />
         ))}

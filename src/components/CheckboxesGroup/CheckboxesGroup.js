@@ -11,6 +11,7 @@ const CheckboxesGroup = ({
   options,
   label,
   color,
+  size,
 }) => {
   const onChange = (e) => {
     setCheckboxState({
@@ -30,6 +31,7 @@ const CheckboxesGroup = ({
                 name={o.value}
                 checked={checkboxState[o.value]}
                 color={color ? color : 'default'}
+                size={size}
               />
             }
             label={o.label}
